@@ -2,4 +2,10 @@ Hi, I'm Adrian. Who are you?
 
 Where are you from?
 
+<<<<<<< HEAD
 I
+=======
+HI, I added something to the text file.
+
+I dont know what is going on!!!!
+>>>>>>> feeb7b9 (What is going on?)

@@ -8,4 +8,9 @@ I
 HI, I added something to the text file.
 
 I dont know what is going on!!!!
->>>>>>> feeb7b9 (What is going on?)
+
+Nothing is working!!!!!!!
+
+What do I do??
+
+should I commit??

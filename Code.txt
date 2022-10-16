@@ -38,3 +38,5 @@ It is still loading:: Why is it still loading??/
 I thing I got it.
 the shourtcut for commit is control + commit + enter
 How do I Stage something??
+
+the shourtcut for sync is control + commit + A

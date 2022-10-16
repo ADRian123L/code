@@ -34,3 +34,6 @@ there is something wrong
 It hasnt worked!!!!
 
 It is still loading:: Why is it still loading??/
+
+I thing I got it.
+the shourtcut for commit is control + commit + enter

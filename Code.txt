@@ -60,3 +60,5 @@ So, Im editing this new bracn called Test Branch–Im edititng from vs Code
 
 I added lines 59 through 61 in the test branch!!
 I will merge the branches did it work?
+
+YES!!! It worked; I know how to merge branches!!!

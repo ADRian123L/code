@@ -40,3 +40,8 @@ the shourtcut for commit is control + commit + enter
 How do I Stage something??
 
 the shourtcut for sync is control + commit + A
+
+
+So, I think I understand this git thing.
+
+I am going to test it further by sending the problems I solve into a repository in github.

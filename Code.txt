@@ -57,3 +57,6 @@ Im editing from Visual Studio Code!!
 Im trying to merge the new branch with main, but it is not working!!!
 
 So, Im editing this new bracn called Test Branch–Im edititng from vs Code
+
+I added lines 59 through 61 in the test branch!!
+I will merge the branches did it work?

@@ -64,3 +64,5 @@ I will merge the branches did it work?
 YES!!! It worked; I know how to merge branches!!!
 
 I got git to work!!!
+
+To get or 'pull' the changes someone esle made I need to sync or pull.

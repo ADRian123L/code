@@ -6,3 +6,5 @@ Adding stuf from web.
 I'm now editing this text file from the terminal!!
 
 SO, I believe I now know how to edit text files inside terminal
+
+I like using git!!

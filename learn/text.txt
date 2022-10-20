@@ -2,3 +2,6 @@ Hi, this is a text that I will use to leanrn how to use git.
 
 
 Adding stuf from web.
+
+I'm now editing this text file from the terminal!!
+

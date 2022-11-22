@@ -59,13 +59,14 @@ prompts = {
 
 def main(run=False) -> None:
 	"""The function drives the program."""
-	# Call a function to prompt for the information:
-	info = information()
-	# Creates an object with its attributes:
-	employee = Engineer(info[0], info[1], info[2], info[3])
-	# Prints the information:
-	print(employee)
-	return None
+	if (run == True):
+		# Call a function to prompt for the information:
+		info = information()
+		# Creates an object with its attributes:
+		employee = Engineer(info[0], info[1], info[2], info[3])
+		# Prints the information:
+		print(employee)
+		return None
 	
 def information() -> list:
 	"""The function prompts and returns a list with all the input 

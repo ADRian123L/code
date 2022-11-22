@@ -1,6 +1,5 @@
-
+# coding: utf: 8
 # The program creates objects for employees' salaries.
-
 
 class Employee:
 	
@@ -46,8 +45,8 @@ class Engineer(Employee):
 	def __str__(self) -> str:
 		"""The method formats the employee's information."""
 		# Formats the output:
-		format =  f"Payroll Data for the employee {self._id}:\n"
-		format += f"{self._name}'s pay this week is: ${self.salary():,.2f}"
+		format = (f"Payroll Data for the employee {self._id}:\n" + 
+				  f"{self._name}'s pay this week is: ${self.salary():,.2f}")
 		return format
 
 prompts = {

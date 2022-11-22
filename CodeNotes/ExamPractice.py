@@ -66,7 +66,7 @@ def main(run=False) -> None:
 		employee = Engineer(info[0], info[1], info[2], info[3])
 		# Prints the information:
 		print(employee)
-		return None
+	return None
 	
 def information() -> list:
 	"""The function prompts and returns a list with all the input 

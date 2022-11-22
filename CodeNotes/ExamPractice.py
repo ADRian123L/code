@@ -13,7 +13,7 @@ class Engineer(Employee):
 
 	def __init__(self : any, name : str, id : int, title : str, hours : int) -> None:
 		"""The initializer method sets the object with five attributes."""
-		Employee.__init__(self, name, id)
+		super(Engineer, self).__init__(name, id)
 		self.__title = title
 		self.__hours = hours
 		self.__pay_rate = 0
@@ -31,7 +31,7 @@ class Engineer(Employee):
 		self.__pay_rate = self.titles[title]
 		return self.__pay_rate
 		
-	def salary(self) -> float:
+	def salary(self : any) -> float:
 		"""The method calculates and returns the pay for the employee."""
 		# Calculates the hours worked:
 		self.over = (self.__hours - 40)

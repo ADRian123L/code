@@ -4,7 +4,7 @@
 
 class Employee:
 	
-	def __init__(self : any, name : str, id : int) -> None:
+	def __init__(self : any, name : str, id : str) -> None:
 		"""The initializer method sets attributes for employees."""
 		self._name = name
 		self._id = id
@@ -12,10 +12,9 @@ class Employee:
 
 class Engineer(Employee):
 
-	def __init__(self : any, name : str, id : int, title : str,
-	 			hours : int) -> None:
+	def __init__(self : any, name : str, id : int, title : str, hours : int) -> None:
 		"""The initializer method sets the object with five attributes."""
-		Employee.__init__(name, id)
+		Employee.__init__(self, name, id)
 		self.__title = title
 		self.__hours = hours
 		self.__pay_rate = 0
@@ -30,13 +29,14 @@ class Engineer(Employee):
 			      "Lead Engineer"   : 70 
 				      }
 		# Assigns the pay to the engineer:
-		self.pay = self.titles[title]
-		return self.pay
+		self.__pay_rate = self.titles[title]
+		return self.__pay_rate
 		
 	def salary(self) -> float:
 		"""The method calculates and returns the pay for the employee."""
 		# Calculates the hours worked:
 		self.over = (self.__hours - 40)
+		self.over = (self.over if (self.over >=0) else 0)
 		self.regular = (self.__hours - self.over)
 		# Calculates the salaries:
 		self.salary = (self.regular * self.pay(self.__title))
@@ -46,8 +46,8 @@ class Engineer(Employee):
 	def __str__(self) -> str:
 		"""The method formats the employee's information."""
 		# Formats the output:
-		format = (f"Payroll Data for the employee {self._id}:\n",
-				  f"{self._name}'s pay this week is: ${self.salary:.2f}")
+		format =  f"Payroll Data for the employee {self._id}:\n"
+		format += f"{self._name}'s pay this week is: ${self.salary():,.2f}"
 		return format
 
 prompts = {
@@ -60,8 +60,12 @@ prompts = {
 
 def main(run=False) -> None:
 	"""The function drives the program."""
+	# Call a function to prompt for the information:
 	info = information()
-	
+	# Creates an object with its attributes:
+	employee = Engineer(info[0], info[1], info[2], info[3])
+	# Prints the information:
+	print(employee)
 	return None
 	
 def information() -> list:
@@ -75,11 +79,11 @@ def information() -> list:
 		info.append(get)
 	# Prompts for the pay:
 	hours = int(input(prompts[3]))
-	run = (True if (hours < 60) else False)
+	run = (True if (hours > 60 or hours < 0) else False)
 	while run:
 		print(prompts[4])
 		hours = int(input(prompts[3]))
-		run = (True if (hours < 60) else False)
+		run = (True if (hours > 60 or hours < 0) else False)
 	# Appends the hours to the list:
 	info.append(hours)
 	return info

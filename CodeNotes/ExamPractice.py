@@ -49,6 +49,7 @@ class Engineer(Employee):
 				  f"{self._name}'s pay this week is: ${self.salary():,.2f}")
 		return format
 
+# The prompts for the input function.
 prompts = {
 	0 : "Enter the employee's name: ",
 	1 : "Enter the employee's ID number: ",
@@ -89,4 +90,5 @@ def information() -> list:
 	return info
 	
 if __name__ == "__main__":
+	# The call to main runs the program.
 	main(run=True)

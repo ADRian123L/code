@@ -4,6 +4,7 @@ numbers : list = list(range(0, 7))
 print(numbers)
 
 # Base class:
+# The class is used to experiment the used of classes and methods.
 class Computer:
     
     def __init__(self : any, memory : float, speed : float) -> None:

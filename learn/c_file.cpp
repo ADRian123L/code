@@ -8,5 +8,5 @@ int main(){
 	
 	cout << "Added this text from the web!!!!" << endl;
 
-	return 1;
+	return 0;
 }
